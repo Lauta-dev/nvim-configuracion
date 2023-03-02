@@ -1,4 +1,3 @@
-require("miModule")
 require("mapeado/mapeado")
 require("plugins/init")
 require("opciones")
