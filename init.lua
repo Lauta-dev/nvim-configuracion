@@ -12,10 +12,12 @@ local plugins = {
   "toggle-term",
   "nvim-ts-rainbow",
   "nvim-test",
+  "auto-save",
+  "alpha-nvim",
 }
 
-for plg in pairs(plugins) do 
-  require("plugins/opciones/" .. plugins[plg]) 
+for plg in pairs(plugins) do
+  require("plugins/opciones/" .. plugins[plg])
 end
 
 local disabled_built_ins = {
