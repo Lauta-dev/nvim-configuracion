@@ -9,4 +9,5 @@ set.smartcase = true
 set.hlsearch = false
 set.wrap = true
 set.breakindent = true
-vim.cmd.colorscheme "catppuccin"
+
+vim.cmd.colorscheme "onedark"
