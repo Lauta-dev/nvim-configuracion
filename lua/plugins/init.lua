@@ -26,8 +26,8 @@ require("lazy").setup({
   { "lukas-reineke/indent-blankline.nvim" },
   { "SmiteshP/nvim-navic", dependencies = {"neovim/nvim-lspconfig"} },
   { "utilyre/barbecue.nvim", name = "barbecue", version = "*", dependencies = { "SmiteshP/nvim-navic", } },
-  {"olimorris/onedarkpro.nvim", priority = 1000 },
-  
+  { "olimorris/onedarkpro.nvim", priority = 1000 },
+  { "klen/nvim-test" },
   -- Lsp
   {  "neovim/nvim-lspconfig" },
   { "williamboman/mason.nvim" },
