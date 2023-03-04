@@ -1,19 +1,22 @@
-require("mapeado/mapeado")
+function Plug (p) return require("plugins/opciones/" .. p) end
+---------------------------------------------------------------
+
 require("plugins/init")
+require("mapeado/mapeado")
 require("opciones")
 
 -- Plugins
-require("plugins/opciones/nvim-tree")
-require("plugins/opciones/autoclose")
-require("plugins/opciones/lualine")
-require("plugins/opciones/nvim-treesitter")
-require("plugins/opciones/cmp")
-require("plugins/opciones/mason")
---require("plugins/opciones/luasnip")
-require("plugins/opciones/toggle-term")
-require("plugins/opciones/nvim-ts-rainbow")
---require("plugins/opciones/nvim-navic")
---require("plugins/opciones/colorize")
+Plug("nvim-tree")
+Plug("autoclose")
+Plug("lualine")
+Plug("nvim-treesitter")
+Plug("cmp")
+Plug("mason")
+Plug("toggle-term")
+Plug("nvim-ts-rainbow")
+--Plug("nvim-navic")
+--Plug("colorize")
+--Plug("luasnip")
 
 local disabled_built_ins = {
     "netrw",
