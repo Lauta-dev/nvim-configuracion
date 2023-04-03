@@ -1,46 +1,37 @@
+function req(req) require("plugins/opciones/" .. req) end
+--function loada(loada) vim.g(loada) end
+
 require("plugins/init")
 require("mapeado/mapeado")
 require("opciones")
 
-local plugins = {
-  "nvim-tree",
-  "autoclose",
-  "lualine",
-  "nvim-treesitter",
-  "cmp",
-  "mason",
-  "toggle-term",
-  "nvim-ts-rainbow",
-  "nvim-test",
-  "auto-save",
-  "alpha-nvim",
-}
+req("nvim-tree")
+req("nvim-ts-rainbow")
+req("nvim-test")
+req("auto-save")
+req("alpha-nvim")
+req("autoclose")
+req("lualine")
+req("nvim-treesitter")
+req("cmp")
+req("mason")
+req("toggle-term")
 
-for plg in pairs(plugins) do
-  require("plugins/opciones/" .. plugins[plg])
-end
-
-local disabled_built_ins = {
-  "netrw",
-  "netrwPlugin",
-  "netrwSettings",
-  "netrwFileHandlers",
-  "gzip",
-  "zip",
-  "zipPlugin",
-  "tar",
-  "tarPlugin",
-  "getscript",
-  "getscriptPlugin",
-  "vimball",
-  "vimballPlugin",
-  "2html_plugin",
-  "logipat",
-  "rrhelper",
-  "spellfile_plugin",
-  "matchit"
-}
-
-for _, plugin in pairs(disabled_built_ins) do
-    vim.g["loaded_" .. plugin] = 1
-end
+--loada("netrw")
+--loada("netrwPlugin")
+--loada("netrwSettings")
+--loada("netrwFileHandlers")
+--loada("gzip")
+--loada("zip")
+--loada("zipPlugin")
+--loada("tar")
+--loada("tarPlugin")
+--loada("getscript")
+--loada("getscriptPlugin")
+--loada("vimball")
+--loada("vimballPlugin")
+--loada("2html_plugin")
+--loada("logipat")
+--loada("rrhelper")
+--loada("spellfile_plugin")
+--loada("matchit")

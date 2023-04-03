@@ -1,7 +1,7 @@
 local lualine = require("lualine")
 lualine.setup({
   options = {
-    theme = "onedark",
+    theme = "auto",
     disabled_filetypes = {
       "alpha",
       "NvimTree",
@@ -12,7 +12,6 @@ lualine.setup({
     lualine_a = {'mode'},
     lualine_b = {'brach', 'diff', 'diagnostics'},
     lualine_c = {'filename'},
-    
     lualine_x = {},
     lualine_y = {'progress'},
     lualine_z = {'location'}
