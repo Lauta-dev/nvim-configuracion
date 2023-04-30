@@ -10,4 +10,4 @@ set.hlsearch = false
 set.wrap = true
 set.breakindent = true
 
-vim.cmd.colorscheme "onedark"
+vim.cmd.colorscheme "catppuccin-mocha"

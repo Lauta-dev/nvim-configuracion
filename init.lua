@@ -2,7 +2,7 @@ function req(req) require("plugins/opciones/" .. req) end
 --function loada(loada) vim.g(loada) end
 
 require("plugins/init")
-require("mapeado/mapeado")
+require("teclas/teclas")
 require("opciones")
 
 req("nvim-tree")
