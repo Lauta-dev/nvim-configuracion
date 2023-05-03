@@ -12,7 +12,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-	{ "catppuccin/nvim", name = "catppuccin" },
 	{ "nvim-tree/nvim-tree.lua" },
 	{ "nvim-tree/nvim-web-devicons" },
 	{ "m4xshen/autoclose.nvim" },
@@ -25,9 +24,9 @@ require("lazy").setup({
   { "lukas-reineke/indent-blankline.nvim" },
   { "SmiteshP/nvim-navic", dependencies = {"neovim/nvim-lspconfig"} },
   { "olimorris/onedarkpro.nvim", priority = 1000 },
-  { "klen/nvim-test" },
   { "Pocco81/auto-save.nvim" },
   { "goolord/alpha-nvim" },
+  { "Shatur/neovim-ayu" },
   -- Lsp
   { "neovim/nvim-lspconfig" },
   { "williamboman/mason.nvim" },

@@ -1,4 +1,4 @@
-function req(req) require("plugins/opciones/" .. req) end
+function req(req) require("plugins/configuracion/" .. req) end
 --function loada(loada) vim.g(loada) end
 
 require("plugins/init")
@@ -7,7 +7,6 @@ require("opciones")
 
 req("nvim-tree")
 req("nvim-ts-rainbow")
-req("nvim-test")
 req("auto-save")
 req("alpha-nvim")
 req("autoclose")
@@ -16,6 +15,7 @@ req("nvim-treesitter")
 req("cmp")
 req("mason")
 req("toggle-term")
+
 
 --loada("netrw")
 --loada("netrwPlugin")
