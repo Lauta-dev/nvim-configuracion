@@ -15,6 +15,7 @@ req("nvim-treesitter")
 req("cmp")
 req("mason")
 req("toggle-term")
+req("which-key-nvim")
 
 
 --loada("netrw")

@@ -27,6 +27,9 @@ require("lazy").setup({
   { "Pocco81/auto-save.nvim" },
   { "goolord/alpha-nvim" },
   { "Shatur/neovim-ayu" },
+  { 'kevinhwang91/nvim-bqf' },
+  { 'xiyaowong/nvim-cursorword' },
+  { "folke/which-key.nvim" },
   -- Lsp
   { "neovim/nvim-lspconfig" },
   { "williamboman/mason.nvim" },
